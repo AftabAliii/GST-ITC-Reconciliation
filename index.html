@@ -1,0 +1,488 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GST ITC Reconciliation</title>
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@4.5.0/fonts/remixicon.css" rel="stylesheet" />
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <header>
+        <strong>GST ITC reconciliation</strong>
+        <h1 class="screen">Step 01 - Upload Data Sheet</h1>
+        <a href="GSTR2B.html"><button id="btn"><i class="ri-arrow-right-s-line"></i></button></a>
+    </header>
+    
+    <main>
+        <h1 class="step">Step 01 - Upload Data Sheet</h1>
+        <div class="table-container">
+            <div class="table-wrapper">
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Month</th>
+                            <th>GSTIN of Supplier</th>
+                            <th>Trade/Legal Name</th>
+                            <th>Invoice Number</th>
+                            <th>Invoice Date</th>
+                            <th>Invoice Value (₹)</th>
+                            <th>Rate (%)</th>
+                            <th>Taxable Value (₹)</th>
+                            <th>Integrated Tax (₹)</th>
+                            <th>Central Tax (₹)</th>
+                            <th>State/UT Tax (₹)</th>
+                            <th>Reconciled</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <!-- 1st row -->
+                        <tr class="april">
+                            <td>April</td>
+                            <td>29AAJCS0460N1ZW</td>
+                            <td>Aftab Ali</td>
+                            <td>INV/April/1</td>
+                            <td>01-04-2025</td>
+                            <td>64868.14</td>
+                            <td>18</td>
+                            <td>54973</td>
+                            <td>0</td>
+                            <td>4947.57</td>
+                            <td>4947.57</td>
+                            <td>No</td>
+                        </tr>
+                        <!-- 2nd row -->
+                        <tr class="april">
+                            <td>April</td>
+                            <td>29AAFFT2649P1ZE</td>
+                            <td>Yunus</td>
+                            <td>INV/April/2</td>
+                            <td>02-04-2025</td>
+                            <td>29551.92</td>
+                            <td>18</td>
+                            <td>25044</td>
+                            <td>0</td>
+                            <td>2253.96</td>
+                            <td>2253.96</td>
+                            <td>Yes</td>
+                        </tr>
+                        <!-- 3rd row -->
+                        <tr class="april">
+                            <td>April</td>
+                            <td>29AJLPK4137C1Z9</td>
+                            <td>Rithika Jain</td>
+                            <td>INV/April/3</td>
+                            <td>03-04-2025</td>
+                            <td>42009.18</td>
+                            <td>18</td>
+                            <td>35601</td>
+                            <td>0</td>
+                            <td>3204.09</td>
+                            <td>3204.09</td>
+                            <td>Yes</td>
+                        </tr>
+                        <!-- 4th row -->
+                        <tr class="april">
+                            <td>April</td>
+                            <td>06AABCF5150G1ZZ</td>
+                            <td>Mohan Lavi</td>
+                            <td>INV/April/4</td>
+                            <td>04-04-2025</td>
+                            <td>78409.82</td>
+                            <td>18</td>
+                            <td>6649</td>
+                            <td>11960.82</td>
+                            <td>0</td>
+                            <td>0</td>
+                            <td>Yes</td>
+                        </tr>
+                        <!-- 5th row -->
+                        <tr class="april">
+                            <td>April</td>
+                            <td>29AAJCS0460N1ZW</td>
+                            <td>Aftab Ali</td>
+                            <td>INV/April/5</td>
+                            <td>05-04-2025</td>
+                            <td>44298.38</td>
+                            <td>18</td>
+                            <td>37541</td>
+                            <td>0</td>
+                            <td>3378.69</td>
+                            <td>3378.69</td>
+                            <td>Yes</td>
+                        </tr>
+                        <!-- 6th row -->
+                        <tr class="april">
+                            <td>April</td>
+                            <td>29AAFFT2649P1ZE</td>
+                            <td>Yunus</td>
+                            <td>INV/April/6</td>
+                            <td>06-04-2025</td>
+                            <td>90418.68</td>
+                            <td>18</td>
+                            <td>76626</td>
+                            <td>0</td>
+                            <td>6896.34</td>
+                            <td>6896.34</td>
+                            <td>Yes</td>
+                        </tr>
+                        <!-- 7th row -->
+                        <tr class="april">
+                            <td>April</td>
+                            <td>06AABCF5150G1ZZ</td>
+                            <td>Mohan Lavi</td>
+                            <td>INV/April/8</td>
+                            <td>07-04-2025</td>
+                            <td>73727.58</td>
+                            <td>18</td>
+                            <td>62481</td>
+                            <td>11246.58</td>
+                            <td>0</td>
+                            <td>0</td>
+                            <td>Yes</td>
+                        </tr>
+                        <!-- 8th row -->
+                        <tr class="april">
+                            <td>April</td>
+                            <td>29AAJCS0460N1ZW</td>
+                            <td>Aftab Ali</td>
+                            <td>INV/April/9</td>
+                            <td>08-04-2025</td>
+                            <td>47814.78</td>
+                            <td>18</td>
+                            <td>40521</td>
+                            <td>0</td>
+                            <td>3646.89</td>
+                            <td>3646.89</td>
+                            <td>Yes</td>
+                        </tr>
+                        <!-- 9th row -->
+                        <tr class="april">
+                            <td>April</td>
+                            <td>29AAFFT2649P1ZE</td>
+                            <td>Yunus</td>
+                            <td>INV/April/10</td>
+                            <td>09-04-2025</td>
+                            <td>113534.88</td>
+                            <td>18</td>
+                            <td>96216</td>
+                            <td>0</td>
+                            <td>8659.44</td>
+                            <td>8659.44</td>
+                            <td>Yes</td>
+                        </tr>
+                        <!-- 10th row -->
+                        <tr class="may">
+                            <td>May</td>
+                            <td>29AAJCS0460N1ZW</td>
+                            <td>Aftab Ali</td>
+                            <td>INV/May/1</td>
+                            <td>12-05-2025</td>
+                            <td>65462.86</td>
+                            <td>18</td>
+                            <td>55477</td>
+                            <td>0</td>
+                            <td>4992.93</td>
+                            <td>4992.93</td>
+                            <td>Yes</td>
+                        </tr>
+                        <!-- 11th row -->
+                        <tr class="may">
+                            <td>May</td>
+                            <td>29AAFFT2649P1ZE</td>
+                            <td>Yunus</td>
+                            <td>INV/May/2</td>
+                            <td>13-05-2025</td>
+                            <td>107174.68</td>
+                            <td>18</td>
+                            <td>90826</td>
+                            <td>0</td>
+                            <td>8174.34</td>
+                            <td>8174.34</td>
+                            <td>Yes</td>
+                        </tr>
+                        <!-- 12th row -->
+                        <tr class="may">
+                            <td>May</td>
+                            <td>29AJLPK4137C1Z9</td>
+                            <td>Rithika Jain</td>
+                            <td>INV/May/3</td>
+                            <td>14-05-2025</td>
+                            <td>75237.98</td>
+                            <td>18</td>
+                            <td>63761</td>
+                            <td>0</td>
+                            <td>5738.49</td>
+                            <td>5738.49</td>
+                            <td>Yes</td>
+                        </tr>
+                        <!-- 13th row -->
+                        <tr class="may">
+                            <td>May</td>
+                            <td>06AABCF5150G1ZZ</td>
+                            <td>Mohan Lavi</td>
+                            <td>INV/May/4</td>
+                            <td>15-05-2025</td>
+                            <td>60067.9</td>
+                            <td>18</td>
+                            <td>50905</td>
+                            <td>9062.9</td>
+                            <td>0</td>
+                            <td>0</td>
+                            <td>No</td>
+                        </tr>
+                        <!-- 14th row -->
+                        <tr class="may">
+                            <td>May</td>
+                            <td>29AAJCS0460N1ZW</td>
+                            <td>Aftab Ali</td>
+                            <td>INV/May/5</td>
+                            <td>16-05-2025</td>
+                            <td>215287.46</td>
+                            <td>18</td>
+                            <td>182447</td>
+                            <td>0</td>
+                            <td>16420.23</td>
+                            <td>16420.23</td>
+                            <td>Yes</td>
+                        </tr>
+                        <!-- 15th row -->
+                        <tr class="may">
+                            <td>May</td>
+                            <td>29AAFFT2649P1ZE</td>
+                            <td>Yunus</td>
+                            <td>INV/May/6</td>
+                            <td>17-05-2025</td>
+                            <td>184103.6</td>
+                            <td>18</td>
+                            <td>156020</td>
+                            <td>0</td>
+                            <td>14041.8</td>
+                            <td>14041.8</td>
+                            <td>Yes</td>
+                        </tr>
+                        <!-- 16th row -->
+                        <tr class="may">
+                            <td>May</td>
+                            <td>29AJLPK4137C1Z9</td>
+                            <td>Rithika Jain</td>
+                            <td>INV/May/7</td>
+                            <td>18-05-2025</td>
+                            <td>181887.56</td>
+                            <td>18</td>
+                            <td>154142</td>
+                            <td>0</td>
+                            <td>13872.78</td>
+                            <td>13872.78</td>
+                            <td>Yes</td>
+                        </tr>
+                        <!-- 17th row -->
+                        <tr class="may">
+                            <td>May</td>
+                            <td>06AABCF5150G1ZZ</td>
+                            <td>Mohan Lavi</td>
+                            <td>INV/May/8</td>
+                            <td>19-05-2025</td>
+                            <td>178571.76</td>
+                            <td>18</td>
+                            <td>151332</td>
+                            <td>27239.76</td>
+                            <td>0</td>
+                            <td>0</td>
+                            <td>Yes</td>
+                        </tr>
+                        <!-- 18th row -->
+                        <tr class="may">
+                            <td>May</td>
+                            <td>29AAJCS0460N1ZW</td>
+                            <td>Aftab Ali</td>
+                            <td>INV/May/9</td>
+                            <td>20-05-2025</td>
+                            <td>137780.34</td>
+                            <td>18</td>
+                            <td>116763</td>
+                            <td>0</td>
+                            <td>10508.67</td>
+                            <td>10508.67</td>
+                            <td>Yes</td>
+                        </tr>
+                        <!-- 19th row -->
+                        <tr class="may">
+                            <td>May</td>
+                            <td>29AAFFT2649P1ZE</td>
+                            <td>Yunus</td>
+                            <td>INV/May/10</td>
+                            <td>21-05-2025</td>
+                            <td>64343.04</td>
+                            <td>18</td>
+                            <td>54528</td>
+                            <td>0</td>
+                            <td>4907.52</td>
+                            <td>4907.52</td>
+                            <td>Blocked</td>
+                        </tr>
+                        <!-- 20th row -->
+                        <tr class="june">
+                            <td>June</td>
+                            <td>29AAJCS0460N1ZW</td>
+                            <td>Aftab Ali</td>
+                            <td>INV/June/1</td>
+                            <td>18-06-2025</td>
+                            <td>113877.08</td>
+                            <td>18</td>
+                            <td>96506</td>
+                            <td>0</td>
+                            <td>8685.54</td>
+                            <td>8685.54</td>
+                            <td>Yes</td>
+                        </tr>
+                        <!-- 21st row -->
+                        <tr class="june">
+                            <td>June</td>
+                            <td>29AAFFT2649P1ZE</td>
+                            <td>Yunus</td>
+                            <td>INV/June/2</td>
+                            <td>19-06-2025</td>
+                            <td>132714.6</td>
+                            <td>18</td>
+                            <td>112470</td>
+                            <td>0</td>
+                            <td>10122.3</td>
+                            <td>10122.3</td>
+                            <td>Yes</td>
+                        </tr>
+                        <!-- 22nd row -->
+                        <tr class="june">
+                            <td>June</td>
+                            <td>29AJLPK4137C1Z9</td>
+                            <td>Rithika Jain</td>
+                            <td>INV/06/3</td>
+                            <td>20-06-2025</td>
+                            <td>61686.86</td>
+                            <td>18</td>
+                            <td>52277</td>
+                            <td>0</td>
+                            <td>4704.93</td>
+                            <td>4704.93</td>
+                            <td>No</td>
+                        </tr>
+                        <!-- 23rd row -->
+                        <tr class="june">
+                            <td>June</td>
+                            <td>06AABCF5150G1ZZ</td>
+                            <td>Mohan Lavi</td>
+                            <td>INV/June/4</td>
+                            <td>21-06-2025</td>
+                            <td>225942.86</td>
+                            <td>18</td>
+                            <td>191477</td>
+                            <td>34465.86</td>
+                            <td>0</td>
+                            <td>0</td>
+                            <td>Yes</td>
+                        </tr>
+                        <!-- 24th row -->
+                        <tr class="june">
+                            <td>June</td>
+                            <td>29AAJCS0460N1ZW</td>
+                            <td>Aftab Ali</td>
+                            <td>INV/June/5</td>
+                            <td>22-06-2025</td>
+                            <td>183203.26</td>
+                            <td>18</td>
+                            <td>155257</td>
+                            <td>0</td>
+                            <td>13973.13</td>
+                            <td>13973.13</td>
+                            <td>Yes</td>
+                        </tr>
+                        <!-- 25th row -->
+                        <tr class="june">
+                            <td>June</td>
+                            <td>29AAFFT2649P1ZE</td>
+                            <td>Yunus</td>
+                            <td>INV/June/6</td>
+                            <td>23-06-2025</td>
+                            <td>232529.62</td>
+                            <td>18</td>
+                            <td>197059</td>
+                            <td>0</td>
+                            <td>17735.31</td>
+                            <td>17735.31</td>
+                            <td>No</td>
+                        </tr>
+                        <!-- 26th row -->
+                        <tr class="june">
+                            <td>June</td>
+                            <td>29AJLPK4137C1Z9</td>
+                            <td>Rithika Jain</td>
+                            <td>INV/June/7</td>
+                            <td>24-06-2025</td>
+                            <td>148899.48</td>
+                            <td>18</td>
+                            <td>126186</td>
+                            <td>0</td>
+                            <td>11356.74</td>
+                            <td>11356.74</td>
+                            <td>Yes</td>
+                        </tr>
+                        <!-- 27th row -->
+                        <tr class="june">
+                            <td>June</td>
+                            <td>06AABCF5150G1ZZ</td>
+                            <td>Mohan Lavi</td>
+                            <td>INV/June/8</td>
+                            <td>25-06-2025</td>
+                            <td>177606.52</td>
+                            <td>18</td>
+                            <td>150514</td>
+                            <td>27092.52</td>
+                            <td>0</td>
+                            <td>0</td>
+                            <td>Yes</td>
+                        </tr>
+                        <!-- 28th row -->
+                        <tr class="june">
+                            <td>June</td>
+                            <td>29AAJCS0460N1ZW</td>
+                            <td>Aftab Ali</td>
+                            <td>INV/June/9</td>
+                            <td>26-06-2025</td>
+                            <td>213195.32</td>
+                            <td>18</td>
+                            <td>180674</td>
+                            <td>0</td>
+                            <td>16260.66</td>
+                            <td>16260.66</td>
+                            <td>Yes</td>
+                        </tr>
+                        <!-- 29th row -->
+                        <tr class="june">
+                            <td>June</td>
+                            <td>29AAFFT2649P1ZE</td>
+                            <td>Yunus</td>
+                            <td>INV/June/10</td>
+                            <td>27-06-2025</td>
+                            <td>144631.42</td>
+                            <td>18</td>
+                            <td>122569</td>
+                            <td>0</td>
+                            <td>11031.21</td>
+                            <td>11031.21</td>
+                            <td>Yes</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </main>
+
+
+
+
+    <script src="script.js"></script>
+</body>
+
+</html>

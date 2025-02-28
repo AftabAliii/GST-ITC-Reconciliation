@@ -1,0 +1,266 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GST ITC Reconciliation</title>
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@4.5.0/fonts/remixicon.css" rel="stylesheet" />
+    <link rel="stylesheet" href="finalpresentation.css">
+</head>
+
+<body>
+    <header>
+        <strong>GST ITC Reconciliation</strong>
+        <h1 class="screen">Step 03 - Final Reconciliation</h1>
+        <a href="GSTR2B.html"><button id="btn"><i class="ri-arrow-left-s-line"></i></button></a>
+    </header>
+
+    <main>
+        <h1 class="hide">Step 03 - Final Reconciliation</h1>
+
+        <div class="container">
+            <!-- Month Buttons in a Row -->
+            <div class="flex">
+                <div class="month-list">
+                    <div class="month-item" onclick="showData('april', this)">April</div>
+                    <div class="month-item" onclick="showData('may', this)">May</div>
+                    <div class="month-item" onclick="showData('june', this)">June</div>
+                    <div class="month-item" onclick="showData('all', this)">All Months</div>
+                </div>
+                <a href="Download.xlsx" download="Reconciliation"><div class="main download">Reconciliation <i class="ri-download-cloud-2-fill"></i></div></a>
+            </div>
+            
+            <!-- Data Container Below the Month Buttons -->
+            <div class="data-container">
+                <div id="april" class="data-content">
+                    <h2>April</h2>
+                    <table class="custom-table">
+                        <thead>
+                            <tr>
+                                <th>GSTIN</th>
+                                <th>No. of invoices in Books</th>
+                                <th>No. of invoices in 2B</th>
+                                <th>Reconciled (%) Books and 2B</th>
+                                <th>Unreconciled (%) Books and 2B</th>
+                                <th>Total ITC as per Books</th>
+                                <th>Total ITC as per 2B</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>29ALPK4137C1Z9</td>
+                                <td>1</td>
+                                <td>2</td>
+                                <td>30%</td>
+                                <td>70%</td>
+                                <td>35,601.00</td>
+                                <td>1,20,606.00</td>
+                            </tr>
+                            <tr>
+                                <td>06AABCF5150G1ZZ</td>
+                                <td>2</td>
+                                <td>2</td>
+                                <td>100%</td>
+                                <td>0%</td>
+                                <td>1,28,930.00</td>
+                                <td>1,28,930.00</td>
+                            </tr>
+                            <tr>
+                                <td>29AAFFT2649P1ZE</td>
+                                <td>3</td>
+                                <td>3</td>
+                                <td>100%</td>
+                                <td>0%</td>
+                                <td>1,97,886.00</td>
+                                <td>1,97,886.00</td>
+                            </tr>
+                            <tr>
+                                <td>29AAJCS0460N1ZW</td>
+                                <td>3</td>
+                                <td>3</td>
+                                <td>59%</td>
+                                <td>41%</td>
+                                <td>78,062.00</td>
+                                <td>1,33,035.00</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+
+                <div id="may" class="data-content">
+                    <h2>May</h2>
+                    <table class="custom-table">
+                        <thead>
+                            <tr>
+                                <th>GSTIN</th>
+                                <th>No. of invoices in Books</th>
+                                <th>No. of invoices in 2B</th>
+                                <th>Reconciled (%) Books and 2B</th>
+                                <th>Unreconciled (%) Books and 2B</th>
+                                <th>Total ITC as per Books</th>
+                                <th>Total ITC as per 2B</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>29ALPK4137C1Z9</td>
+                                <td>2</td>
+                                <td>2</td>
+                                <td>100%</td>
+                                <td>0%</td>
+                                <td>2,17,903.00</td>
+                                <td>2,17,903.00</td>
+                            </tr>
+                            <tr>
+                                <td>06AABCF5150G1ZZ</td>
+                                <td>2</td>
+                                <td>2</td>
+                                <td>75%</td>
+                                <td>25%</td>
+                                <td>1,51,332.00</td>
+                                <td>2,02,237.00</td>
+                            </tr>
+                            <tr>
+                                <td>29AAFFT2649P1ZE</td>
+                                <td>3</td>
+                                <td>3</td>
+                                <td>82%</td>
+                                <td>18%</td>
+                                <td>2,46,846.00</td>
+                                <td>3,01,374.00</td>
+                            </tr>
+                            <tr>
+                                <td>29AAJCS0460N1ZW</td>
+                                <td>3</td>
+                                <td>3</td>
+                                <td>100%</td>
+                                <td>0%</td>
+                                <td>3,54,687.00</td>
+                                <td>3,54,687.00</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+
+                <div id="june" class="data-content">
+                    <h2>June</h2>
+                    <table class="custom-table">
+                        <thead>
+                            <tr>
+                                <th>GSTIN</th>
+                                <th>No. of invoices in Books</th>
+                                <th>No. of invoices in 2B</th>
+                                <th>Reconciled (%) Books and 2B</th>
+                                <th>Unreconciled (%) Books and 2B</th>
+                                <th>Total ITC as per Books</th>
+                                <th>Total ITC as per 2B</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>29ALPK4137C1Z9</td>
+                                <td>2</td>
+                                <td>2</td>
+                                <td>71%</td>
+                                <td>29%</td>
+                                <td>1,26,186.00</td>
+                                <td>1,78,463.00</td>
+                            </tr>
+                            <tr>
+                                <td>06AABCF5150G1ZZ</td>
+                                <td>2</td>
+                                <td>2</td>
+                                <td>100%</td>
+                                <td>0%</td>
+                                <td>3,41,991.00</td>
+                                <td>3,41,991.00</td>
+                            </tr>
+                            <tr>
+                                <td>29AAFFT2649P1ZE</td>
+                                <td>3</td>
+                                <td>2</td>
+                                <td>100%</td>
+                                <td>0%</td>
+                                <td>2,35,039.00</td>
+                                <td>2,35,039.00</td>
+                            </tr>
+                            <tr>
+                                <td>29AAJCS0460N1ZW</td>
+                                <td>3</td>
+                                <td>3</td>
+                                <td>100%</td>
+                                <td>0%</td>
+                                <td>4,32,437.00</td>
+                                <td>4,32,437.00</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+
+                <div id="all" class="data-content">
+                    <h2>April - June</h2>
+                    <table class="custom-table">
+                        <thead>
+                            <tr>
+                                <th>GSTIN</th>
+                                <th>No. of invoices in Books</th>
+                                <th>No. of invoices in 2B</th>
+                                <th>Reconciled (%) Books and 2B</th>
+                                <th>Unreconciled (%) Books and 2B</th>
+                                <th>Total ITC as per Books</th>
+                                <th>Total ITC as per 2B</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>29ALPK4137C1Z9</td>
+                                <td>5</td>
+                                <td>6</td>
+                                <td>73%</td>
+                                <td>27%</td>
+                                <td>3,79,690</td>
+                                <td>5,16,972</td>
+                            </tr>
+                            <tr>
+                                <td>06AABCF5150G1ZZ</td>
+                                <td>6</td>
+                                <td>6</td>
+                                <td>92%</td>
+                                <td>8%</td>
+                                <td>6,22,253</td>
+                                <td>6,73,158</td>
+                            </tr>
+                            <tr>
+                                <td>29AAFFT2649P1ZE</td>
+                                <td>9</td>
+                                <td>8</td>
+                                <td>93%</td>
+                                <td>7%</td>
+                                <td>6,79,771</td>
+                                <td>7,34,299</td>
+                            </tr>
+                            <tr>
+                                <td>29AAJCS0460N1ZW</td>
+                                <td>9</td>
+                                <td>9</td>
+                                <td>94%</td>
+                                <td>6%</td>
+                                <td>8,65,186</td>
+                                <td>9,20,159</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <footer>
+        <a href="Download.xlsx" download="Reconciliation"><div class="footer download">Reconciliation <i class="ri-download-cloud-2-fill"></i></div></a>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,373 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", serif;
+    -webkit-tap-highlight-color: transparent;
+    outline: none;
+}
+
+body::-webkit-scrollbar {
+    width: 3px;
+}
+
+body::-webkit-scrollbar-track {
+    background: #f4f4f4;
+    border-radius: 3px;
+}
+
+body::-webkit-scrollbar-thumb {
+    background: #b0b0b0;
+    border-radius: 10px;
+    transition: background 0.3s ease-in-out;
+}
+
+body::-webkit-scrollbar-thumb:hover {
+    background: #888;
+}
+
+html,
+body {
+    height: 100%;
+    width: 100%;
+}
+
+body {
+    background-color: #f5f5f5;
+    color: #333840;
+}
+
+header {
+    min-height: 70px;
+    height: 13vh;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 65px 30px;
+}
+
+header strong {
+    font-size: 30px;
+    font-weight: 400;
+    padding: 15px 20px;
+    border-radius: 10px;
+    background-color: #e7e7e9d7;
+    text-align: center;
+}
+
+header h1 {
+    font-weight: 600;
+}
+
+.step {
+    text-align: center;
+    display: none;
+}
+
+.hide {
+    display: none;
+}
+
+header button {
+    font-size: 44px;
+    background-color: #e7e7e9d7;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: all 0.2s ease;
+}
+
+header button:active {
+    scale: 0.9;
+}
+
+.container {
+    margin: 50px 0px;
+    display: flex;
+    gap: 30px;
+    flex-direction: column;
+    align-items: center;
+}
+
+.flex {
+    display: flex;
+    width: 95vw;
+    justify-content: space-between;
+}
+
+.download {
+    width: 190px;
+    height: fit-content;
+    padding: 10px 15px;
+    background: white;
+    cursor: pointer;
+    text-align: center;
+    border-radius: 5px;
+    box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1);
+    transition: 0.3s;
+}
+
+.download:hover {
+    background-color: black;
+    color: white;
+}
+
+.month-list {
+    width: 95vw;
+    display: flex;
+    gap: 10px;
+}
+
+.month-item {
+    padding: 10px 40px;
+    background: white;
+    margin: 5px 0;
+    cursor: pointer;
+    text-align: center;
+    font-weight: bold;
+    border-radius: 5px;
+    box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1);
+    transition: 0.3s;
+}
+
+.month-item:hover {
+    background: #ddd;
+}
+
+.data-container {
+    flex-grow: 0.5;
+    background: white;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1);
+    /* height: 321px; */
+    height: fit-content;
+    width: 95vw;
+    overflow-x: auto;
+}
+
+.data-container::-webkit-scrollbar {
+    width: 3px;
+    height: 3px;
+}
+
+.data-container::-webkit-scrollbar-track {
+    background: #f4f4f4;
+    border-radius: 3px;
+}
+
+.data-container::-webkit-scrollbar-thumb {
+    background: #b0b0b0;
+    border-radius: 10px;
+    transition: background 0.3s ease-in-out;
+}
+
+.data-container::-webkit-scrollbar-thumb:hover {
+    background: #888;
+}
+
+.data-content {
+    display: none;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 10px;
+}
+
+th,
+td {
+    border: 1px solid #000;
+    padding: 8px;
+    text-align: center;
+}
+
+th {
+    background: #f4f4f4;
+}
+
+.bold {
+    font-weight: bold;
+}
+
+.active {
+    background: #4285f4 !important;
+    background: rgb(0, 0, 70) !important;
+    color: white;
+}
+
+a {
+    text-decoration: none;
+    color: initial;
+}
+
+.footer {
+    display: none;
+}
+
+
+
+@media (max-width: 1024px) {
+    .container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .data-container {
+        /* width: 90vw;
+        margin-bottom: 30px;
+        max-width: 900px; */
+        height: fit-content;
+        width: -webkit-fill-available;
+    }
+
+    .month-list {
+        display: flex;
+        justify-content: center;
+        gap: 10px;
+        width: 700px;
+    }
+
+    .month-item {
+        flex: 1;
+    }
+
+    .screen {
+        display: none;
+    }
+
+    .hide {
+        display: flex;
+        justify-content: center;
+        margin-top: 30px;
+        font-weight: 600;
+    }
+
+    a {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .main {
+        display: none;
+    }
+
+
+    .footer {
+        display: block;
+        position: fixed;
+        bottom: 15vmax;
+        font-size: 19px;
+        padding: 15px;
+    }
+
+    .flex {
+        display: flex;
+        justify-content: center;
+    }
+}
+
+@media (max-width: 768px) {
+    header {
+        text-align: center;
+        padding: 20px;
+        gap: 10px;
+    }
+
+    header strong {
+        font-size: 28px;
+        padding: 10px 15px;
+    }
+
+    header button {
+        font-size: 33px;
+        padding: 0px 5px;
+    }
+
+    .data-container {
+        width: 90vw;
+        padding: 10px;
+    }
+
+    th,
+    td {
+        padding: 6px;
+        font-size: 14px;
+    }
+
+    table {
+        width: 100%;
+    }
+
+    footer a button {
+        padding: 10px 15px;
+        border-radius: 50%;
+        width: fit-content;
+        bottom: 53%;
+    }
+
+}
+
+@media (max-width: 515px) {
+    header strong {
+        font-size: 23px;
+        padding: 8px 15px;
+    }
+
+    .month-item {
+        padding: 8px;
+        font-size: 12px;
+    }
+
+    .data-container {
+        width: 98%;
+        padding: 6px;
+    }
+
+    th,
+    td {
+        padding: 4px;
+        font-size: 12px;
+    }
+
+    .hide {
+        font-size: 25px;
+        text-align: center;
+        width: 70%;
+        margin: 0px 70px;
+    }
+
+    footer a button {
+        font-size: 13px;
+        padding: 5px 10px;
+    }
+
+    .footer {
+        bottom: 17vh;
+    }
+}
+
+@media (max-width: 455px) {
+    .hide {
+        margin: 0px 61px;
+    }
+
+    footer a button {
+        bottom: 53%;
+        left: 20px;
+    }
+
+    .data-container {
+        width: 95vw;
+        padding: 20px;
+        height: fit-content;
+    }
+
+    table {
+        width: 100%;
+    }
+}

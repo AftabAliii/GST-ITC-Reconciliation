@@ -1,0 +1,182 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", serif;
+    -webkit-tap-highlight-color: transparent;
+    outline: none;
+}
+
+html,
+body {
+    height: 100%;
+    width: 100%;
+}
+
+body {
+    background-color: #f5f5f5;
+    color: #333840;
+}
+
+header {
+    min-height: 70px;
+    height: 13vh;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 65px 30px;
+}
+
+header strong {
+    font-size: 30px;
+    font-weight: 400;
+    padding: 15px 20px;
+    border-radius: 10px;
+    background-color: #e7e7e9d7;
+    text-align: center;
+}
+
+header h1 {
+    font-weight: 600;
+}
+
+.step {
+    text-align: center;
+    display: none;
+}
+
+header button {
+    font-size: 44px;
+    background-color: #e7e7e9d7;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: all 0.2s ease;
+}
+
+header button:active {
+    transform: scale(0.8);
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    /* padding: 15px 0px; */
+}
+
+/* Custom minimal scrollbar */
+.table-container::-webkit-scrollbar {
+    width: 3px;
+    /* Thin scrollbar */
+}
+
+.table-container::-webkit-scrollbar-track {
+    background: #f4f4f4;
+    /* Light grey track */
+    border-radius: 3px;
+}
+
+.table-container::-webkit-scrollbar-thumb {
+    background: #b0b0b0;
+    /* Soft grey thumb */
+    border-radius: 10px;
+    transition: background 0.3s ease-in-out;
+}
+
+.table-container::-webkit-scrollbar-thumb:hover {
+    background: #888;
+    /* Darker grey on hover */
+}
+
+/* Table container for scrolling */
+.table-container {
+    width: 95%;
+    max-height: 75vh;
+    /* Set height as needed */
+    overflow-y: auto;
+    border: 1px solid #ccc;
+    background: #fff;
+    scroll-behavior: smooth;
+}
+
+/* Wrapper to make table scrollable */
+.table-wrapper {
+    width: 100%;
+    overflow-x: auto;
+}
+
+/* Table styling */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    text-align: center;
+}
+
+/* Sticky Header */
+thead {
+    position: sticky;
+    top: 0;
+    background: #f4f4f4;
+    z-index: 10;
+}
+
+th,
+td {
+    border: 1px solid #ccc;
+    padding: 8px;
+}
+
+th {
+    background: #f4f4f4;
+    font-weight: bold;
+}
+
+/* Row Colors */
+.april {
+    background-color: #f2f2f2;
+}
+
+.may {
+    background-color: #f2f2f2;
+}
+
+.june {
+    background-color: #f2f2f2;
+}
+
+/* Responsive Design */
+@media (max-width: 1000px) {
+    .screen {
+        display: none;
+    }
+
+    .step {
+        display: block;
+        font-size: 23px;
+        margin: 20px 0px;
+    }
+
+    .table-container {
+        max-height: 75vh;
+    }
+}
+
+@media (max-width: 525px) {
+    header {
+        padding: 30px 15px;
+        justify-content: space-between;
+    }
+
+    header strong {
+        font-size: 25px;
+        padding: 10px 7px;
+    }
+
+    header button {
+        font-size: 37px;
+    }
+}
