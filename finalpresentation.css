@@ -268,9 +268,10 @@ a {
 
     .footer {
         display: block;
-        position: fixed;
-        bottom: 6%;
+        /* position: fixed;
+        bottom: 6%; */
         font-size: 25px;
+        margin: 25px 0px;
         padding: 15px 45px;
         width: fit-content;
     }
@@ -321,7 +322,7 @@ a {
     }
 
     .footer {
-        bottom: 4vh;
+        /* bottom: 4vh; */
         padding: 10px 30px;
     }
 
@@ -358,7 +359,7 @@ a {
     }
 
     .footer {
-        bottom: 5vh;
+        /* bottom: 5vh; */
         font-size: 20px;
         padding: 8px 15px;
     }
@@ -385,8 +386,8 @@ a {
     table {
         width: 100%;
     }
-
+/* 
     .footer {
         bottom: 3vh;
-    }
+    } */
 }
